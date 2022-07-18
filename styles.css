@@ -1,0 +1,11 @@
+*{
+    font-family: 'Archivo', sans-serif;
+    margin-top: .05em;
+}
+
+.large_name{
+    font-size: 5em;
+    border: solid .05em black;
+    display: inline;
+    float: left;
+}
