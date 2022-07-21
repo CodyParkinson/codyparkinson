@@ -6,7 +6,7 @@
 }
 
 .large_name{
-    font-size: 6rem;
+    font-size: 18vh;
     border: solid .3rem black;
     display: inline;
     float:left;
@@ -20,10 +20,11 @@
 }
 
 .nav_main{
-    font-size: 2.276rem;
+    font-size: 6.5vh;
     list-style-type: none;
     line-height: 170%;
     text-align: center;
+    text-decoration: none;
 }
 
 .individual_ul{
@@ -31,6 +32,13 @@
     margin-top: 0.5rem;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.individual_ul a{
+    text-decoration: none;
+    color:black
 }
 
 .contact_box{
@@ -43,16 +51,15 @@
 .contact_info_l{
     vertical-align: top;
     display: inline-block;
-    font-size: 1.0rem;
+    font-size: 3vh;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
 }
 
 .contact_info_r{
     vertical-align: top;
-    display: inline-block;
     float: right;
-    font-size: 1.0rem;
+    font-size: 3vh;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
 }
@@ -65,5 +72,5 @@
     border: solid .3rem black;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
-    font-size: 1.5rem;
+    font-size: 6vh;
 }
