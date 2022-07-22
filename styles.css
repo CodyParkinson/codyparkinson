@@ -1,3 +1,4 @@
+/* Deafult for the whole site */
 *{
     font-family: 'Archivo', sans-serif;
     margin: 0px;
@@ -5,6 +6,28 @@
     border: 0px
 }
 
+
+/* This is a universal Navigation bar to be used everywhere except the home page*/
+.nav_bar{
+    overflow: hidden;
+}
+
+.nav_bar a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    border-right: solid .3rem black;
+    border-bottom: solid .3rem black;
+}
+
+.nav_bar a:hover{
+    background-color: rgba(232, 232, 235, 0.934);
+}
+
+/* Classes used primarily in Index */
 .large_name{
     font-size: 18vh;
     border: solid .3rem black;
@@ -40,6 +63,9 @@
     text-decoration: none;
     color:black
 }
+.individual_ul a:hover{
+    background-color: rgba(232, 232, 235, 0.934);
+}
 
 .contact_box{
     border: solid .3rem black;
@@ -73,4 +99,84 @@
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     font-size: 6vh;
+}
+
+.main_page_posts a{
+    color: black;
+    text-decoration: none;
+}
+
+.main_page_posts a:hover{
+    background-color: rgba(232, 232, 235, 0.934);
+}
+
+
+/* Classes used primarily MillionFeet */
+#mil_title{
+    font-size: 5.7rem;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+#mil_title_sub{
+    font-size: 2.7rem;
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
+.mil_grid{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.mil_col1{
+    grid-column: 1;
+    border: solid .1rem black;
+    display: inline;
+    padding-left: 0.1vh;
+    padding-right: 0.1vh;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.mil_col2{
+    grid-column: 2;
+    border: solid .1rem black;
+    display: inline;
+    padding-left: 0.1vh;
+    padding-right: 0.1vh;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.mil_col3{
+    grid-column: 3;
+    border: solid .1rem black;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.6rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+.mil_Qs{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.mil_As{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: .5rem;
+}
+
+#mil_QA_sub{
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 1.5%;
 }
