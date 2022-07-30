@@ -133,8 +133,8 @@
     grid-column: 1;
     border: solid .1rem black;
     display: inline;
-    padding-left: 0.1vh;
-    padding-right: 0.1vh;
+    padding-left: 0.2vh;
+    padding-right: 0.2vh;
     font-size: 1.6rem;
     margin-left: 3rem;
     text-align: center;
@@ -144,8 +144,8 @@
     grid-column: 2;
     border: solid .1rem black;
     display: inline;
-    padding-left: 0.1vh;
-    padding-right: 0.1vh;
+    padding-left: 0.15vh;
+    padding-right: 0.15vh;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -158,6 +158,19 @@
     font-size: 1.6rem;
     margin-right: 3rem;
     text-align: center;
+}
+
+.mil_grid_parent{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+.mil_col1_parent{
+grid-column: 1;
+}
+
+.mil_col2_parent{
+grid-column: 2;
 }
 
 .mil_Qs{
@@ -179,6 +192,11 @@
     font-size: 2.7rem;
     text-align: center;
     margin-top: 1.5%;
+}
+
+.image_styling{
+    border: solid .1rem black;
+    padding: .1rem .1rem .1rem .1rem;
 }
 
 
