@@ -197,6 +197,7 @@ grid-column: 2;
 .image_styling{
     border: solid .1rem black;
     padding: .1rem .1rem .1rem .1rem;
+    margin-bottom: .1rem;
 }
 
 
@@ -233,4 +234,17 @@ grid-column: 2;
 
 .PP_col1 a:hover{
     background-color: rgba(232, 232, 235, 0.934);
+}
+
+
+/* Classes used primarily About */
+#title_for_about{
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+#main_about_paragraph{
+    font-size: 1.1rem;
+    padding: 1rem 1rem 2rem 2rem;
 }
