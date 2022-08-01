@@ -248,3 +248,18 @@ grid-column: 2;
     font-size: 1.1rem;
     padding: 1rem 1rem 2rem 2rem;
 }
+
+
+/* Classes used primarily Journal Entries */
+#JE_main_text{
+    font-size: 1.1rem;
+    padding-left:5rem;
+    padding-right: 5rem;
+}
+
+.JE_img_wrap{
+    float: right;
+    margin: 0rem 5rem 1rem 1rem;
+    border: solid .1rem black;
+    padding: .1rem .1rem .1rem .1rem;
+}
