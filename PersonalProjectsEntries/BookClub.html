@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="nav_bar">
+        <a href="../index.html">Cody Parkinson</a>
+        <a href="../About.html">About</a>
+        <a href="../CodingProjects.html">Coding Projects</a>
+        <a href="../PersonalProjects.html">Personal Projects</a>
+        <a href="../Journal.html">Journal</a>
+    </div>
+    <div style="clear:both;"></div>
+
+
+    <!--Collapse wording so all books fit on one page-->
+    <div>
+        <button type="button" class="collapsibleBC">Book Club - Can’t Hurt Me, David Goggins</button>
+        <div class="contentBC">
+        <p>	At this point if you haven’t read the book, what are you doing? I know what you’re thinking when you hear Goggins, “oh no another one of those cringe Joe-Rogan-DMT-log-carrying-boat boys.” I know, because I think the same way. Once you get past the hype, it truly is incredible what he accomplished. This is a rare book for me in that this is actually my third time reading it. It only gets better each time I’ve read it, and you can’t help but feel at least slightly inspired to try harder. Whenever I start to feel lazy, I read the book to get me back on the horse. 
+            There is no such thing as a perfect book, and this is not an exception. I think that if you worship this book, you’re kind of a dummy. The part that kills me is that he says multiple times that his lifestyle basically sucks, and then people go out and try to imitate it. I agree in order to ‘get hard’ you have to do hard things, but to do those things in search of clout - I have yet to see it work out. If you want to imitate Goggins, you can’t just adopt his workouts, but you have to aquire his personality. I think social media is great, and I love to see people’s successes. In fact, I would go as far as to say that I believe people should post more of their successes. Unfortunately when you look at #canthurtme tags, you can’t help but feel the cringe meter tick. For some reason, people love to post that they are going to do 100 days of something, and you only see the first 2 or 3, then it goes dark, never to be seen again. Anybody can do anything for a few days, but it takes grit in order to go the distance (Rocky round 14).
+            That wasn’t a very good critique of the book since it isn’t the book's fault that people try to imitate Goggins. I believe the shortcomings are in the personal life department. I have wondered since the first time I read the book, back in spring 2020, what happened to his child or why he was divorced multiple times. Even if he wants to keep that part of his life private, I do think a statement about protecting their identity would have been good. You can’t claim to have aired all your dirty laundry if there are topics that feel blatantly secret.
+            With that being said, I recommend this book. It is a 4.9/5, and I’ll probably end up reading it again sometime. It feels good knowing there are people out there as passionate and hardworking as Goggins, and I even fall into the trap of thinking I can go run the Moab 240 on Myoplex and Ritz crackers. Maybe that’s why I like the book so much. I think Taylor would be mad at me if I did that, so I think I’ll keep that off to the side for the next while.
+        </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--JS code for controlling collapse-->
+    <script>
+        var coll = document.getElementsByClassName("collapsibleBC");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("openContent");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+        }
+    </script>
+    
+</body>
+</html>
