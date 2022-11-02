@@ -110,6 +110,10 @@
     background-color: rgba(232, 232, 235, 0.934);
 }
 
+.center_all_buttons{
+    background-color: white;
+}
+
 
 /* Classes used primarily MillionFeet */
 #mil_title{
@@ -279,17 +283,41 @@ grid-column: 2;
     outline: none;
     font-size: 1.5rem;
     margin-top: 1rem;
-  }
-  
-  .openContent, .collapsibleBC:hover{
-    background-color: lightslategray;
-  }
-  
-  .contentBC{
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    font-size: 1.2rem;
-    line-height: 120%;
-  }
+}
+
+.openContent, .collapsibleBC:hover{
+background-color: lightslategray;
+}
+
+.contentBC{
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+font-size: 1.2rem;
+line-height: 120%;
+}
+
+
+/* Classes used primarily Project Euler */
+.PE_Table{
+    width: 100%;
+    border-collapse: collapse;
+    color:black;
+}
+
+.PE_Table td, .PE_Table th{
+    border: 0.1rem solid black;
+    padding: .8rem;
+}
+
+.PE_Table tr:nth-child(even){
+    background-color: rgb(225, 222, 222);
+}
+
+.PE_Table tr:hover{
+    background-color: rgb(193, 193, 193);
+}
+
+
+

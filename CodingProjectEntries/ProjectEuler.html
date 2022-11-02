@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Euler Analysis</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="nav_bar">
+        <a href="../index.html">Cody Parkinson</a>
+        <a href="../About.html">About</a>
+        <a href="../CodingProjects.html">Coding Projects</a>
+        <a href="../PersonalProjects.html">Personal Projects</a>
+        <a href="../Journal.html">Journal</a>
+    </div>
+    <div style="clear:both;"></div>
+
+    <H1 style="text-align: center; margin-top: 1rem;">Project Euler</H1>
+    <h2 style="text-align: center; margin-bottom: 1rem;">8/3/2022 - Current</h2>
+
+    <div class="JE_img_wrap">
+        <img src="../images/euler_portrait.png" alt="Euler Portrait">
+        <p style="text-align: center;"> Leonhard Euler </p>
+        </div>
+    
+        <p id="JE_main_text">	
+            As of today (11/1/2022), I have solved the first 70 problems on ProjectEuler.net. It has taken me a few months, but I am excited to have completed the ones I have. Below I am listing my code for the first 100 problems. These are done in Python 3.9. Most of the problems run within the “one minute rule”, but some do not. Please read my notes to see how long to expect the programs to run. I have added notes where I feel they are applicable, but always feel free to reach out if something doesn’t make sense.
+            <br><br>
+            As for the difficulty, I made notes in the code about how long it took me to solve each problem. I did all of the problems in order; I did not skip around. All of the code was written by me, unless specifically stated otherwise. When researching better methods for solving parts of problems, I copied techniques that were optimal; again, this is all noted. Finally, it really is hard to gauge how difficult a problem is based on its percentage. There were quite a few 25% problems that I felt were easier than the 5% and 10% ones, so when attempting these yourself, don’t focus on that number. 
+            <br><br>
+            This leads me into thinking about tips for solving. Again, don’t focus on the difficulty, this really doesn’t mean very much (at least on the ones below 50%). All of the problems have a trick or a mathematical equation to them. Do not try to hard code and iterate through all the values a problem could have. Most problems deal with such a large amount of values that it is impossible to solve without the proper equations. Research, research, research - this is not cheating. Looking up answers is cheating, but use Google (not Bing) to find hints in solving. Finally, make sure your program can solve for the examples. If the problem gives examples, make sure you can solve them. So many times I jumped in, wrote a bunch of code, and realized I couldn’t even solve for the first (usually low) values. 
+            <br><br>
+            And that’s about it! I love solving these, the feeling of dopamine you get after grinding out a problem for hours and days is hard to match. Please read my note at the bottom of the page, but other than that, happy Eulering!
+            <br><br><br><br>
+        </p>
+
+        <div style="clear:both;"></div>
+
+        <h2 style="text-align: center; margin-bottom: 1rem;">Problems</h2>
+        <div style="width: 90%; margin: 0 auto;">
+            <table class="PE_Table">
+                <tr style="background-color: rgb(189, 246, 189);">
+                    <th style="width: 10%;">Problem</th>
+                    <th style="width: 20%;">GitHub Link</th>
+                    <th style="width: 70%">Hints</th>
+                </tr>
+                <tr>
+                    <th> 1 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-1.py"> Multiples of 3 or 5 </a></th>
+                    <th> For loops will be your best friend. </th>
+                </tr>
+                <tr>
+                    <th> 2 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-2.py"> Even Fibonacci numbers </a></th>
+                    <th> Figuring ways to save previous values without clogging up memory will help you immensely on later problems. </th>
+                </tr>
+                <tr>
+                    <th> 3 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-3.py"> Largest prime factor </a></th>
+                    <th> Learn to love primes, because man do they love asking about them. </th>
+                </tr>
+                <tr>
+                    <th> 4 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-4.py"> Largest palindrome product </a></th>
+                    <th> Nested if's. </th>
+                </tr>
+                <tr>
+                    <th> 5 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-5.py"> Smallest multiple </a></th>
+                    <th> The number must be a multiple of 20, so don't check numbers that aren't divisible by it. </th>
+                </tr>
+                <tr>
+                    <th> 6 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-6.py"> Sum square difference </a></th>
+                    <th> I think you got this one on your own. </th>
+                </tr>
+                <tr>
+                    <th> 7 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-7.py"> 10001st prime </a></th>
+                    <th> Did I mention you need to learn to love primes? </th>
+                </tr>
+                <tr>
+                    <th> 8 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-8.py"> Largest product in a series </a></th>
+                    <th> Loop through the list and find the product of list[number] + list[number + 1]... list[number + 13]. </th>
+                </tr>
+                <tr>
+                    <th> 9 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs1-9/Question-9.py"> Special Pythagorean triplet </a></th>
+                    <th> The real trick is making sure you have a,b,c not a^2, b^2, c^2. </th>
+                </tr>
+                <tr>
+                    <th> 10 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-10.py"> Summation of primes </a></th>
+                    <th> Go find an optimal stratagy for finding primes and keep it close by. </th>
+                </tr>
+                <tr>
+                    <th> 11 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-11.py"> Largest product in a grid </a></th>
+                    <th> Of course they didn't make it the easy one to find. </th>
+                </tr>
+                <tr>
+                    <th> 12 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-12.py"> Highly divisible triangular number </a></th>
+                    <th> When checking for divisors, only check up to the square root. Anything above this is a repeat. </th>
+                </tr>
+                <tr>
+                    <th> 13 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-13.py"> Large sum </a></th>
+                    <th> The hardest part is just seperating the values. Your computer can most definitely calculate this without any problem. </th>
+                </tr>
+                <tr>
+                    <th> 14 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-14.py"> Longest Collatz sequence </a></th>
+                    <th> This problem can just be hard coded. Just follow the sequence, and the problem will solve easily. My hard coded python code took ~30 seconds. </th>
+                </tr>
+                <tr>
+                    <th> 15 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-15.py"> Lattice paths </a></th>
+                    <th> This is a combinations problem, think back to statistics, and do not hard code. </th>
+                </tr>
+                <tr>
+                    <th> 16 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-16.py"> Power digit sum </a></th>
+                    <th> You got this one. </th>
+                </tr>
+                <tr>
+                    <th> 17 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-17.py"> Number letter counts </a></th>
+                    <th> Man, do I love Python!(import num2words) </th>
+                </tr>
+                <tr>
+                    <th> 18 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-18.py"> Maximum path sum I </a></th>
+                    <th> Think bottom up. As you go up, just save the highest values. </th>
+                </tr>
+                <tr>
+                    <th> 19 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs10-19/Question-19.py"> Counting Sundays </a></th>
+                    <th> Not a hard problem, but do some paper math and find an approximate value. My code is wrong, but it was close enough that I just did some "plug and chug" and got the right answer. </th>
+                </tr>
+                <tr>
+                    <th> 20 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-20.py"> Factorial digit sum </a></th>
+                    <th> import math. </th>
+                </tr>
+                <tr>
+                    <th> 21 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-21.py"> Amicable numbers </a></th>
+                    <th> I used a dictionary to store the values togther, iterated through the dictionary to look for matches, if they matched - add the value to a list, and finally sum the list. </th>
+                </tr>
+                <tr>
+                    <th> 22 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-22.py"> Names scores </a></th>
+                    <th> As long as your program can calculate COLIN correctly, you should be good to just check all the names. Just make sure your letter values are correct. </th>
+                </tr>
+                <tr>
+                    <th> 23 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-23.py"> Non-abundant sums </a></th>
+                    <th> My code is not good, but it works. If I redid it, I would create a list of abundant numbers and use itertools combinations to create a list of combo sums under 28124. Create a list of "True" that is 28123 in length. Loop the combos and turn the indexes to "False" if they are sums. Loop the T/F list. If True add index to total.  </th>
+                </tr>
+                <tr>
+                    <th> 24 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-24.py"> Lexicographic permutations </a></th>
+                    <th> from itertools import permutations. </th>
+                </tr>
+                <tr>
+                    <th> 25 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-25.py"> 1000-digit Fibonacci number </a></th>
+                    <th> I created a list - don't do this. Just follow the equation and move through the sequence. You really don't have to save any values besides the previous 2 to calculate the next one. </th>
+                </tr>
+                <tr>
+                    <th> 26 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-26.py"> Reciprocal cycles </a></th>
+                    <th> https://en.wikipedia.org/wiki/Repeating_decimal#Fractions_with_prime_denominators - working with fractions is difficult. </th>
+                </tr>
+                <tr>
+                    <th> 27 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-27.py"> Quadratic primes </a></th>
+                    <th> Don't be afraid of negative numbers. </th>
+                </tr>
+                <tr>
+                    <th> 28</th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-28.py"> Number spiral diagonals </a></th>
+                    <th> Create a list of diagonals. Look at the pattern. Every 4 values there is 2 more numbers seperating each corner. Looking at the problem, you can see that the next corners will have 5 numbers between them, next corner 7, 9, 11...  </th>
+                </tr>
+                <tr>
+                    <th> 29 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs20-29/Question-29.py"> Distinct powers </a></th>
+                    <th> Sets in Python are quite remarkable. </th>
+                </tr>
+                <tr>
+                    <th> 30 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-30.py"> Digit fifth powers </a></th>
+                    <th> Integer -> String -> Integer </th>
+                </tr>                
+                <tr>
+                    <th> 31 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-31.py"> Coin sums </a></th>
+                    <th> This problem gave me a lot of headache. It can be hardcoded, but it takes a long time, and I still didn't come up with the right answer. Please visit https://www.mathblog.dk/project-euler-31-combinations-english-currency-denominations/ and look at the dynamic programming method he uses. It is super slick, and a great tool to help think about later problems. </th>
+                </tr>
+                <tr>
+                    <th> 32 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-32.py"> Pandigital products </a></th>
+                    <th> If the resulting product contains a zero, toss it. Also, the length of the multipliers and product must == 9. </th>
+                </tr>
+                <tr>
+                    <th> 33 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-33.py"> Digit cancelling fractions </a></th>
+                    <th> Create a list of numbers 10-99 that contain at least one shared number and do not contain a 0. Subtract the duplicated number and check that the resulting fraction is the same as the original. </th>
+                </tr>
+                <tr>
+                    <th> 34 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-34.py"> Digit factorials </a></th>
+                    <th> math.factorial(). </th>
+                </tr>
+                <tr>
+                    <th> 35 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-35.py"> Circular primes </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 36 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-36.py"> Double-base palindromes </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 37 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-37.py"> Truncatable primes </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 38 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-38.py"> Pandigital multiples </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 39 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs30-39/Question-39.py"> Integer right triangles </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 40 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-40.py"> Champernowne's constant </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 41 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-41.py"> Pandigital prime </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 42 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-42.py"> Coded triangle numbers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 43 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-43.py"> Sub-string divisibility </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 44 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-44.py"> Pentagon numbers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 45 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-45.py"> Triangular, pentagonal, and hexagonal </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 46 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-46.py"> Goldbach's other conjecture </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 47 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-47.py"> Distinct primes factors </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 48 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-48.py"> Self powers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 49 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs40-49/Question-49.py"> Prime permutations </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 50 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-50.py"> Consecutive prime sum </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 51 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-51.py"> Prime digit replacements </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 52 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-52.py"> Permuted multiples </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 53 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-53.py"> Combinatoric selections </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 54 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-54.py"> Poker hands </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 55 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-55.py"> Lychrel numbers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 56 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-56.py"> Powerful digit sum </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 57 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-57.py"> Square root convergents </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 58 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-58.py"> Spiral primes </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 59 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs50-59/Question-59.py"> XOR decryption </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 60 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-60.py"> Prime pair sets </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 61 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-61.py"> Cyclical figurate numbers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 62 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-62.py"> Cubic permutations </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 63 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-63.py"> Powerful digit counts </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 64 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-64.py"> Odd period square roots </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 65 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-65.py"> Convergents of e </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 66 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-66.py"> Diophantine equation </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 67 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-67.py"> Maximum path sum II </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 68 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-68.py"> Magic 5-gon ring </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 69 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs60-69/Question-69.py"> Totient maximum </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 70 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-70.py"> Totient permutation </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 71 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-71.py"> Ordered fractions </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 72 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-72.py"> Counting fractions </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 73 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-73.py"> Counting fractions in a range </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 74 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-74.py"> Digit factorial chains </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 75 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-75.py"> Singular integer right triangles </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 76 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-76.py"> Counting summations </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 77 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-77.py"> Prime summations </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 78 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-78.py"> Coin partitions </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 79 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs70-79/Question-79.py"> Passcode derivation </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 80 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-80.py"> Square root digital expansion </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 81 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-81.py"> Path sum: two ways </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 82 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-82.py"> Path sum: three ways </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 83 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-83.py"> Path sum: four ways </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 84 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-84.py"> Monopoly odds </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 85 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-85.py"> Counting rectangles </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 86 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-86.py"> Cuboid route </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 87 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-87.py"> Prime power triples </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 88 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-88.py"> Product-sum numbers </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 89 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs80-89/Question-89.py"> Roman numerals </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 90 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-90.py"> Cube digit pairs </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 91 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-91.py"> Right triangles with integer coordinates </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 92 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-92.py"> Square digit chains </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 93 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-93.py"> Arithmetic expressions </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 94 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-94.py"> Almost equilateral triangles </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 95 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-95.py"> Amicable chains </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 96 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-96.py"> Su Doku </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 97 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-97.py"> Large non-Mersenne prime </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 98 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-98.py"> Anagramic squares </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 99 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-99.py"> Largest exponential </a></th>
+                    <th>  </th>
+                </tr>
+                <tr>
+                    <th> 100 </th>
+                    <th><a href="https://github.com/CodyParkinson/Euler-Finishes/blob/main/Qs90-100/Question-100.py"> Arranged probability </a></th>
+                    <th>  </th>
+                </tr>
+
+            </table>
+            <p><br><br><br><br></p>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <h2 style="text-align: center; margin-bottom: 1rem;">Note</h2>
+        <p id="JE_main_text">
+            Respecting the Project Euler guidelines, I will not be posting anything I solve above question 100. I see a lot of places with just the answers posted, so if you are looking to just boost your profile - go find those pages. 
+            <br><br>
+            My goal is to provide my (very unoptimized) code for others to look through. I have found Project Euler to be such an amazing place to learn new techniques and ideas. The first 100 questions are a great learning ground to help boost into the later problems. There is really no sense of getting too stuck on the first 100 (save the desk throwing for the later problems).
+            <br><br>
+            So, if you are looking for the clout of just having the answers to the first 100, well I guess that’s up to you. Honestly if you get your confidence out of showing others you have solved math problems on a niche website - I hope these help with that. 
+            <br><br><br><br><br>
+        </p>
+
+
+    
+</body>
+</html>
