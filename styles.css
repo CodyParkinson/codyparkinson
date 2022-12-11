@@ -27,6 +27,7 @@
     background-color: rgba(232, 232, 235, 0.934);
 }
 
+
 /* Classes used primarily in Index */
 .large_name{
     font-size: 18vh;
@@ -80,6 +81,15 @@
     font-size: 3vh;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
+}
+
+.contact_info_l a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact_info_l a:hover{
+    background-color: rgba(232, 232, 235, 0.934);
 }
 
 .contact_info_r{
