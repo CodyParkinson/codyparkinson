@@ -331,19 +331,25 @@ line-height: 120%;
 
 
 /* Classes used primarily Birding */
-.container {
+.containerBirds {
+    display: grid;
     height: auto;
     margin: .3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
     gap: 1rem;
+    justify-content: center;
   }
 
-  .cell {
+  .cellBirds {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5vw;
     text-align: center;
     padding: 4rem;
     border: 0.4rem solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+
+
+
