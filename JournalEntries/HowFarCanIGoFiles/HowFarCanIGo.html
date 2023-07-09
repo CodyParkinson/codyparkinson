@@ -1,0 +1,111 @@
+<!-- Cody Note - Add new runs to sheet, download as csv, replace in directory-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runnin'</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #numberList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #numberList li {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+    <script>
+        // Function to parse the CSV file
+        function parseCSV(csv) {
+            var lines = csv.split('\n');
+            var numbers = [];
+            var dates = [];
+            var locations = [];
+
+            var totalMiles = 0;
+            var itemCount = lines.length;
+
+            for (var i = lines.length - 1; i >= 0; i--) {
+                var line = lines[i].trim();
+
+                if (line !== '') {
+                    var values = line.split(',');
+                    var number = values[0].trim();
+                    var date = values[1].trim();
+                    var location = values[2].trim();
+
+                    numbers.push(number);
+                    dates.push(date);
+                    locations.push(location);
+
+                    // Calculate the total miles by summing the numbers in the first column
+                    totalMiles += parseFloat(number);
+                }
+            }
+
+            return { numbers, dates, locations, totalMiles, itemCount };
+        }
+
+        // Function to update the webpage with numbers, dates, total miles, and item count
+        function updateNumbersDatesTotalMilesAndItemCount(data) {
+            var numberList = document.getElementById('numberList');
+            numberList.innerHTML = '';
+
+            for (var i = 0; i < data.numbers.length; i++) {
+                var li = document.createElement('li');
+                li.textContent = data.numbers[i]+ ' mi' + ' - ' + data.dates[i] + ' - ' + data.locations[i];
+                numberList.appendChild(li);
+            }
+
+            var totalMilesElement = document.getElementById('totalMiles');
+            totalMilesElement.textContent = 'Total Miles: ' + data.totalMiles.toFixed(2);
+
+            var itemCountElement = document.getElementById('itemCount');
+            itemCountElement.textContent = 'Days in a row: ' + data.itemCount;
+        }
+
+        // Read and process the CSV file
+        fetch('HowFarCSV.csv')
+            .then((response) => response.text())
+            .then((csv) => {
+                var data = parseCSV(csv);
+                updateNumbersDatesTotalMilesAndItemCount(data);
+            })
+            .catch((error) => console.error('Error:', error));
+    </script>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="nav_bar">
+        <a href="../../index.html">Cody Parkinson</a>
+        <a href="../../About.html">About</a>
+        <a href="../../PersonalProjects.html">Projects</a>
+        <a href="../../Journal.html">Journal</a>
+    </div>
+    <div style="clear:both;"></div>
+
+    <h1 style="text-align: center; margin-top: 1rem;">How far can I go?</h1>
+    <br>
+    <p id="JE_main_text">
+        I don’t know where I got the thought, but I had a bad idea where I want to see how many days in a row I can run. Rules are simple, I must run and log at least one mile per day. Midnight to Midnight. This list is on my own honor system. As soon as I miss a day, the journal ends.
+    </p>
+
+    <br><br>
+
+    <p id="totalMiles" style="text-align: center;"></p>
+    <p id="itemCount" style="text-align: center;"></p>
+
+    <br>
+
+    <ul id="numberList" style="text-align: center;"></ul>
+</body>
+</html>

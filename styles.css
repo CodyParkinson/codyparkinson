@@ -228,6 +228,8 @@ grid-column: 2;
     display: inline;
     padding-left: .6rem;
     padding-right: .6rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
     font-size: 3rem;
     margin-left: 3rem;
     display: flex;
