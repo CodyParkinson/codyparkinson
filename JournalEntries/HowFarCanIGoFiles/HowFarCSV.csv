@@ -1,11 +1,19 @@
 1.0,6/26/2023,Sugar City - Idaho,,,
 2.0,6/27/2023,Sugar City - Idaho,,,
 2.0,6/28/2023,Sugar City - Idaho,Total,Days Total,Average/day
+<<<<<<< HEAD
 2.0,6/29/2023,Sugar City - Idaho,758.5,194,3.91
 3.0,6/30/2023,Sugar City - Idaho,,,
 2.0,7/1/2023,Sugar City - Idaho,,,
 3.0,7/2/2023,Sugar City - Idaho,Lowest,Goal,Lbs to Goal
 2.0,7/3/2023,Sugar City - Idaho,205.6,190,15.6
+=======
+2.0,6/29/2023,Sugar City - Idaho,565.5,155,3.65
+3.0,6/30/2023,Sugar City - Idaho,,,
+2.0,7/1/2023,Sugar City - Idaho,,,
+3.0,7/2/2023,Sugar City - Idaho,Current,Lowest,Lbs to Goal
+2.0,7/3/2023,Sugar City - Idaho,,,
+>>>>>>> c93b197b60ba0ec83ce28e2652fa8d06e627d2d9
 1.0,7/4/2023,Sugar City - Idaho,,,
 3.0,7/5/2023,Sugar City - Idaho,,,
 2.5,7/6/2023,Sugar City - Idaho,,,
@@ -152,6 +160,7 @@
 2.0,11/24/2023,Sugar City - Idaho,,,211.4
 14.0,11/25/2023,Ashton-Tetonia Trail - Idaho,,,208.8
 4.0,11/26/2023,Sugar City - Idaho,,,204.6
+<<<<<<< HEAD
 3.0,11/27/2023,Sugar City - Idaho,,,207.4
 3.0,11/28/2023,Russ Freeman Park - Idaho,,,204.2
 3.0,11/29/2023,Sugar City - Idaho,,,204
@@ -192,3 +201,6 @@
 2.0,1/3/2024,Sugar City - Idaho,,,205.6
 4.0,1/4/2024,Sugar City - Idaho,,,208.6
 2.0,1/5/2024,Sugar City - Idaho,,,
+=======
+3.0,11/27/2023,Sugar City - Idaho,,,207.4
+>>>>>>> c93b197b60ba0ec83ce28e2652fa8d06e627d2d9
