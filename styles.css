@@ -341,9 +341,9 @@ line-height: 120%;
     grid-template-columns: 30% 30% 30%;
     gap: 1rem;
     justify-content: center;
-  }
+}
 
-  .cellBirds {
+.cellBirds {
     color: black;
     font-size: 1.5vw;
     text-align: center;
@@ -351,7 +351,59 @@ line-height: 120%;
     border: 0.4rem solid black;
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
+}
 
 
 
+
+
+
+
+/* Classes used by Home Page Mobile Popup */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Responsive width */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%; /* Larger width for mobile */
+        font-size: 18px; /* Larger font size */
+}
+
+.close {
+    font-size: 32px; /* Larger close button */
+}
+}
+  
